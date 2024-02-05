@@ -14,10 +14,15 @@ class DB_storage:
     __session = None
     def __init__(self):
         """initialisation method"""
-        db_user = os.environ['MY_SQL_USER'] if 'MY_SQL_USER' in os.environ else None
-        db_pwd = os.environ['MY_SQL_PWD'] if 'MY_SQL_PWD' in os.environ else None
-        db_host = os.environ['MY_SQL_HOST'] if 'MY_SQL_HOST' in os.environ else None
-        db_name = os.environ['MY_SQL_NAME'] if 'MY_SQL_NAME' in os.environ else None
+        #db_user = os.environ['MY_SQL_USER'] if 'MY_SQL_USER' in os.environ else None
+        #db_pwd = os.environ['MY_SQL_PWD'] if 'MY_SQL_PWD' in os.environ else None
+        #db_host = os.environ['MY_SQL_HOST'] if 'MY_SQL_HOST' in os.environ else None
+        #db_name = os.environ['MY_SQL_NAME'] if 'MY_SQL_NAME' in os.environ else None
+
+        db_user = "study_room_dev"
+        db_pwd = "study_room_pwd"
+        db_host = "localhost"
+        db_name = "study_room_db"
         self.__engine = create_engine('mysql+mysqldb://{}:{}@{}/{}'.format(db_user, db_pwd, db_host, db_name))
         Session = sessionmaker(bind=self.__engine)
         self.__session = Session()

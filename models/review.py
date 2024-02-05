@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """blueprint to define reviews"""
 
-from base import BaseModel, Base
-from sqlalchemy import Column, String, ForeignKey
+from models.base import BaseModel, Base
+from sqlalchemy import Column, String, ForeignKey, Integer
 
 
 class Review(BaseModel, Base):
