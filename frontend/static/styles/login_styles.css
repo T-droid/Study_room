@@ -31,7 +31,7 @@ input {
 }
 
 button {
-    background-color: #4caF50;
+    background-color: #54a7df;
     color: white;
     padding: 10px;
     border: none;
@@ -40,5 +40,19 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #54a7df;
+}
+
+#login {
+    position: absolute;
+    top: 0;
+    padding: 5px;
+    background-color: #54a7df;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 94vh;
+    text-align: center;
+}
+#div_p {
+    display: inline-block;
 }

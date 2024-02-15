@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Room - Find Your Tutor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/home_styles.css') }}">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+  <header>
+    <h1>Study Room</h1>
+    <p>Find Your Tutor and Master Any Subject</p>
+    <a href="login.html">Login</a>
+  </header>
+
+  <section class="search-section">
+    <h2>Search for a tutors</h2>
+    <form action="search_results.html" method="GET">
+      <label for="subject">Subject:</label>
+      <input type="search" id="subject" name="subject">
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="price">Price Range:</label>
+      <input type="text" id="price" name="price">
+
+      <button type="submit">Search</button>
+    </form>
+  </section>
+
+  <section class="featured-tutors">
+    <h2>Featured Tutors</h2>
+    <!-- Swiper Carousel for Featured Tutors -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide tutor-card">
+          <img src="tutor1.jpg" alt="Tutor 1">
+          <h3>Tutor Name 1</h3>
+          <p>Subject: Math</p>
+          <p>Location: Online</p>
+          <p>Price: $20/hour</p>
+          <div class="rating">4.5 stars</div>
+        </div>
+        <div class="swiper-slide tutor-card">
+          <img src="tutor2.jpg" alt="Tutor 2">
+          <h3>Tutor Name 2</h3>
+          <p>Subject: Science</p>
+          <p>Location: CityName</p>
+          <p>Price: $25/hour</p>
+          <div class="rating">4.8 stars</div>
+        </div>
+        <!-- Add more tutor cards as needed -->
+      </div>
+      <!-- Add navigation buttons for the carousel -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <section class="student-testimonials">
+    <h2>What Students Say</h2>
+    <div class="testimonial">
+      <p>"Study Room made learning fun and engaging. I found an amazing tutor who helped me excel in my studies."</p>
+      <span>- John Doe</span>
+    </div>
+    <!-- Add more testimonials as needed -->
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Study Room. All rights reserved.</p>
+  </footer>
+
+  <!-- Include Swiper JS library -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>

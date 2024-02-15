@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile - Study Room</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/profile_styles.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Study Room</h1>
+    <a href="home.html">Home</a>
+    <a href="#logout">Logout</a>
+  </header>
+
+  <section class="profile-section">
+    <h2>Student Profile</h2>
+    <div class="profile-card">
+      <img src="student_profile.jpg" alt="Student Profile">
+      <h3>Student Name</h3>
+      <p>Level: High School</p>
+      <p>Interests: Science, Literature</p>
+      <p>Location: CityName</p>
+      <!-- Add more details as needed -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Study Room. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results - Study Room</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/search_results.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Study Room</h1>
+    <p>Your Search Results</p>
+    <a href="login.html">Login</a>
+  </header>
+
+  <section class="search-results">
+    <!-- Display search results for tutors and subjects -->
+    <div class="result-card">
+      <img src="tutor1.jpg" alt="Tutor 1">
+      <h3>Tutor Name 1</h3>
+      <p>Subject: Math</p>
+      <p>Location: Online</p>
+      <p>Price: $20/hour</p>
+    </div>
+
+    <div class="result-card">
+      <img src="tutor2.jpg" alt="Tutor 2">
+      <h3>Tutor Name 2</h3>
+      <p>Subject: Science</p>
+      <p>Location: CityName</p>
+      <p>Price: $25/hour</p>
+    </div>
+
+    <!-- Add more result cards for tutors and subjects as needed -->
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Study Room. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/landing_page.css') }}"
+        <h1> Study Room</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#subjects">Subjects</a></li>
+                <li><a href="#tutors">Tutors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <section class="search-bar">
+            <div class="container">
+                <form action="/search" method="get">
+                    <label for="searchQuery">Search for a Subject or Tutor:</label>
+                    <input type="text" id="searchQuery" name="q" placeholder="Enter your search...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+        
+        <section class="description">
+            <div class="description-content">
+                <h2>Who are we</h2>
+                <p>Study Room is an online learning platform that connects students with experienced tutors. Whether you need help with a specific subject or want to explore new topics, we've got you covered. Our platform makes learning easy, convenient, and personalized.</p>
+            </div>
+        </section>
+        
+        <section class="hero">
+            <img src="../images/education_image.jpeg" alt="Education Image">
+            <br>
+            <div class="hero-content">
+                <h2>Find the Perfect Tutor for Any Subject</h2>
+                <p>Your one-stop solution for online learning. Connect with expert tutors and explore a wide range of subjects.</p>
+                <a href="#subjects" class="cta-button">Get Started</a>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <img src="../images/feature1_icon.png" alt="Feature 1 Icon">
+                <h3>Search Subjects</h3>
+                <p>Effortlessly find subjects you want to learn and explore.</p>
+            </div>
+            <div class="feature">
+                <img src="../images/feature2_icon.png" alt="Feature 2 Icon">
+                <h3>Connect with Tutors</h3>
+                <p>Connect with experienced tutors who can help you master any topic.</p>
+            </div>
+            <!-- Add more feature blocks as needed -->
+        </section>
+        <section class="cta">
+            <h2>Ready to Learn?</h2>
+            <p>Join our platform today and start your learning journey.</p>
+            <a href="#signup" class="cta-button">Sign Up Now</a>
+        </section>                  
+    </body>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#subjects">Subjects</a></li>
+                <li><a href="#tutors">Tutors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <!-- Add social media icons with links -->
+        </div>
+        <p>&copy; 2024 Your Web App Name. All rights reserved.</p>
+    </footer>    
+</html>
